@@ -1,5 +1,35 @@
+# ===================================================================
+# Arquivos gerados pela aplicação que não devem ser versionados
+# ===================================================================
+
+# Arquivos de dados da aplicação (Adição mais importante!)
+*.dat
+
+# Arquivos de log
+*.log
+
+
+# ===================================================================
+# Arquivos compilados do Java e pacotes
+# ===================================================================
+/out/
+/bin/
+/dist/
+/nbdist/
+*.class
+*.jar
+*.war
+*.ear
+
+
+# ===================================================================
+# Arquivos e pastas de IDEs e Editores
+# ===================================================================
+
 ### IntelliJ IDEA ###
-out/
+.idea/
+*.iml
+# As regras abaixo são para casos específicos e podem ser mantidas
 !**/src/main/**/out/
 !**/src/test/**/out/
 
@@ -11,19 +41,23 @@ out/
 .settings
 .springBeans
 .sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# A pasta bin/ já foi declarada na seção de compilados
 
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
-/nbdist/
 /.nb-gradle/
 
 ### VS Code ###
 .vscode/
 
+
+# ===================================================================
+# Arquivos de Sistema Operacional
+# ===================================================================
+
 ### Mac OS ###
 .DS_Store
+
+### Windows ###
+Thumbs.db
